@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    width: 100%;
+    background-image: url("../images/background.png");
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+p {
+  text-align: justify;
+}
+
+a ,a:active{
+  text-decoration: none;
+  color: inherit;
+}
+
+#container {
+display: flex;
+flex-wrap:  wrap;
+width: 60%;
+margin: 5% auto;
+min-height: 750px;
+border-radius: 5px;
+overflow: hidden;
+background-color: rgb(255,255,255); /*for older browser*/
+background-color: rgba(255,255,255,0.6);
+box-shadow: 2px 6px 34px -15px rgba(0, 0, 0, 0.56);
+
+}
+
+/* ==================== Asdie =====================*/
+aside {
+  background-color: #e2e2e2;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+aside .pic img {
+  width: 100%;
+}
+
+      /* ==================== Menu =====================*/
+aside .menu  {
+  list-style: none;
+}
+
+aside .menu a li {
+  padding: 20px 15px;
+  font-size: 16px;
+  color:  #595959;
+  border-bottom: 1px solid  #d9d9d9;
+}
+
+aside .menu a li:hover{
+  border-left: 4px solid #53A6F9;
+  font-weight: 700;
+
+}
+
+aside .menu a .clicked {
+  border-left: 4px solid #53A6F9;
+  color: #2196f3;
+  font-weight: 400;
+}
+
+      /* ==================== Social Icons =====================*/
+aside .social-icons {
+  margin-top: auto;
+  padding-bottom: 20px;
+  text-align: center;
+  font-size: 2em;
+  color: #595959;
+  text-decoration: none;
+}
+
+aside .social-icons a {
+  padding: 0 5px;
+}
+aside .social-icons a:hover {
+  color: #53A6F9;
+}
+
+/* ==================== Main Section =====================*/
+
+section {
+  width: 75%;
+}
+
+section #page-title {
+  padding: 10px 10px;
+  background-color: rgb(226, 226, 226); /*for older browser*/
+  background-color: rgba(226, 226, 226, 0.6);
+  background: linear-gradient(to left, #53A7F9 0%, #75C9FF 100%, #99F2FF 100%);
+  background: -webkit-linear-gradient(left, #53A7F9 0%, #75C9FF 100%, #99F2FF 100%);
+  background: -moz-linear-gradient(left, #53A7F9 0%, #75C9FF 100%, #99F2FF 100%);
+  background: -ms-linear-gradient(left, #53A7F9 0%, #75C9FF 100%, #99F2FF 100%);
+  background: -o-linear-gradient(left, #53A7F9 0%, #75C9FF 100%, #99F2FF 100%);
+  color: white;
+}
+
+article {
+padding: 20px 20px;
+margin: 10px 10px;
+background-color: #F7F9FA;
+border-left: 4px solid #595959;
+}
+
+article h1 {
+  color: #595959;
+}
+
+article p {
+  line-height: 35px;
+}
