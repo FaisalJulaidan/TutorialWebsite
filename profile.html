@@ -12,15 +12,17 @@
 
     <title>Faisal Julaidan</title>
 
-    <style type="text/css">
-        #post-title {
-            margin-bottom: 20px;
-        }
+    <style>
 
-        time {
-            font-size: 0.9em;
-            color: #b3b3b3;
-        }
+    #side-content .pic img {
+        width: 100%;
+        transition: all ease 0.5s;
+    }
+
+    #side-content .pic img:hover {
+        filter: blur(1.5px);
+    }
+
     </style>
 </head>
 
@@ -28,16 +30,17 @@
     <main id="container">
         <!-- Side Section -->
         <section id="side-content">
+            <div class="pic"><img src="images/profile-pic.jpg" alt="Profile-Picture" /></div>
             <nav>
                 <ul class="menu">
                     <a href="home.html">
                         <li><span class="fa fa-home fa-lg fa-fw" aria-hidden="true"></span> Home</li>
                     </a>
                     <a href="profile.html">
-                        <li><span class="fa fa-user fa-lg fa-fw" aria-hidden="true"></span> Profile</li>
+                        <li class="clicked"><span class="fa fa-user fa-lg fa-fw" aria-hidden="true"></span> Profile</li>
                     </a>
                     <a href="blog.html">
-                        <li class="clicked"><span class="fa fa-coffee fa-lg fa-fw" aria-hidden="true"></span> Blog</li>
+                        <li><span class="fa fa-coffee fa-lg fa-fw" aria-hidden="true"></span> Blog</li>
                     </a>
                     <a href="videos.html">
                         <li><span class="fa fa-video-camera fa-lg fa-fw" aria-hidden="true"></span> Videos</li>
@@ -53,32 +56,22 @@
 
 
             <div class="social-icons">
-                <a href=""><span class="fa fa-twitter"></span></a>
-                <a href=""><span class="fa fa-facebook"></span></a>
-                <a href=""><span class="fa fa-linkedin"></span></a>
-                <a href=""><span class="fa fa-github"></span></a>
+                <a href="https://twitter.com/FaisalJulaidan"><span class="fa fa-twitter"></span></a>
+                <a href="https://www.facebook.com/faisal.julaidan"><span class="fa fa-facebook"></span></a>
+                <a href="https://www.linkedin.com/in/faisal-julaidan-641676a5?trk=hp-identity-name"><span class="fa fa-linkedin"></span></a>
+                <a href="https://github.com/FaisalJulaidan"><span class="fa fa-github"></span></a>
             </div>
         </section>
         <!-- Side Section END -->
         <!-- Main Section -->
-        <section>
+        <section id="main-content">
             <header id="page-title">
-                <h1><span class="fa fa-coffee fa-lg fa-fw" aria-hidden="true"></span> BLOG</h1>
+                <h1><span class="fa fa-user fa-lg fa-fw" aria-hidden="true"></span> Profile</h1>
             </header>
-
             <article>
-                <header id="post-title">
-                    <h1>Semantics and the Web</h1>
-                    <small>
-                      <time datetime="2012-04-18"><span class="fa fa-clock-o fa-fw"></span>Wednesday, April 18th, 2012 by Mike Robinson.</time>
-                    </small>
-                </header>
 
-                <p> Semantics are the implied meaning of a subject, like a word or sentence. It aids how humans (and these days, machines) interpret subject matter. On the web, HTML serves both humans and machines, suggesting the purpose of the content enclosed
-                    within an HTML tag. Since the dawn of HTML, elements have been revised and adapted based on actual usage on the web, ideally so that authors can navigate markup with ease and create carefully structured documents, and so that machines
-                    can infer the context of the wonderful collection of data we humans can read.</</p>
+
             </article>
-
 
 
 
