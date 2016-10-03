@@ -36,44 +36,44 @@ box-shadow: 2px 6px 34px -15px rgba(0, 0, 0, 0.56);
 
 }
 
-/* ==================== Asdie =====================*/
-aside {
+/* ==================== Side Content =====================*/
+#side-content {
   background-color: #e2e2e2;
   width: 25%;
   display: flex;
   flex-direction: column;
 }
 
-aside .pic img {
+#side-content .pic img {
   width: 100%;
 }
 
       /* ==================== Menu =====================*/
-aside .menu  {
+#side-content nav ul  {
   list-style: none;
 }
 
-aside .menu a li {
+#side-content nav ul a li {
   padding: 20px 15px;
   font-size: 16px;
   color:  #595959;
   border-bottom: 1px solid  #d9d9d9;
 }
 
-aside .menu a li:hover{
+#side-content nav ul a li:hover{
   border-left: 4px solid #53A6F9;
   font-weight: 700;
 
 }
 
-aside .menu a .clicked {
+#side-content nav ul  a .clicked {
   border-left: 4px solid #53A6F9;
   color: #2196f3;
   font-weight: 400;
 }
 
       /* ==================== Social Icons =====================*/
-aside .social-icons {
+#side-content .social-icons {
   margin-top: auto;
   padding-bottom: 20px;
   text-align: center;
@@ -82,10 +82,10 @@ aside .social-icons {
   text-decoration: none;
 }
 
-aside .social-icons a {
+#side-content .social-icons a {
   padding: 0 5px;
 }
-aside .social-icons a:hover {
+#side-content .social-icons a:hover {
   color: #53A6F9;
 }
 
