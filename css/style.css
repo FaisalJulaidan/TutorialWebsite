@@ -1,30 +1,51 @@
-
 @keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
+
 
 /*==================== General =====================*/
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Fira Sans', sans-serif;
-    box-sizing: border-box;
 }
 
 body {
     width: 100%;
-    background-image: url("../images/background.png");
     animation: fadein 1s;
+    background-image: url("../images/background.png");
 }
 
 h1 {
     font-size: 1.5em;
 }
 
+h2 {
+    margin-bottom: 10px;
+}
+
 p {
     text-align: justify;
+}
+
+button {
+    padding: 10px 25px;
+    color: white;
+    border: 0px;
+    border-radius: 30px;
+    background-color: #53A6F9;
+    margin: 10px 0;
+}
+
+button:hover{
+  background-color: #595959;
 }
 
 a, a:active {
@@ -32,28 +53,43 @@ a, a:active {
     color: inherit;
 }
 
+textarea {
+    width: 100%;
+    height: 200px;
+    margin: 10px 0 padding: 10px;
+    border-radius: 10px;
+}
+
+input[type="text"] {
+    width: 60%;
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px black
+}
+
 #container {
     display: flex;
-    flex-wrap: wrap;
-    width: 60%;
-    margin: 5% auto;
-    min-height: 750px;
-    border-radius: 5px;
     overflow: hidden;
+    width: 60%;
+    min-height: 750px;
+    margin: 5% auto;
+    border-radius: 5px;
     background-color: rgb(255, 255, 255);
     /*for older browser*/
     background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 2px 6px 34px -15px rgba(0, 0, 0, 0.56);
+    flex-wrap: wrap;
 }
 
 
 /* ==================== Side Content =====================*/
 
 #side-content {
-    background-color: #e2e2e2;
-    width: 25%;
     display: flex;
     flex-direction: column;
+    width: 25%;
+    background-color: #e2e2e2;
 }
 
 
@@ -65,9 +101,9 @@ a, a:active {
 
 #side-content nav ul a li {
     padding: 20px 15px;
-    font-size: 16px;
     color: #595959;
     border-bottom: 1px solid #d9d9d9;
+    font-size: 16px;
 }
 
 #side-content nav ul a li:hover {
@@ -76,8 +112,8 @@ a, a:active {
 }
 
 #side-content nav ul a .clicked {
-    border-left: 4px solid #53A6F9;
     color: #2196f3;
+    border-left: 4px solid #53A6F9;
     font-weight: 400;
 }
 
@@ -88,9 +124,9 @@ a, a:active {
     margin-top: auto;
     padding-bottom: 20px;
     text-align: center;
-    font-size: 2em;
-    color: #595959;
     text-decoration: none;
+    color: #595959;
+    font-size: 2em;
 }
 
 #side-content .social-icons a {
@@ -110,22 +146,22 @@ section {
 
 section #page-title {
     padding: 10px 10px;
-    background-color: rgb(226, 226, 226);
-    /*for older browser*/
-    background-color: rgba(226, 226, 226, 0.6);
+    color: white;
     background: linear-gradient(to left, #53A7F9 0%, #75C9FF 100%, #99F2FF 100%);
     background: -webkit-linear-gradient(left, #53A7F9 0%, #75C9FF 100%, #99F2FF 100%);
     background: -moz-linear-gradient(left, #53A7F9 0%, #75C9FF 100%, #99F2FF 100%);
     background: -ms-linear-gradient(left, #53A7F9 0%, #75C9FF 100%, #99F2FF 100%);
     background: -o-linear-gradient(left, #53A7F9 0%, #75C9FF 100%, #99F2FF 100%);
-    color: white;
+    background-color: rgb(226, 226, 226);
+    /*for older browser*/
+    background-color: rgba(226, 226, 226, 0.6);
 }
 
 article {
-    padding: 20px 20px;
     margin: 10px 10px;
+    padding: 20px 20px;
+    border-left: 3.5px solid #8c8c8c;
     background-color: #F7F9FA;
-    border-left: 3.5px solid  #8c8c8c;
 }
 
 article h1 {
