@@ -10,11 +10,19 @@
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-    <title>Faisal Julaidan</title>
+    <title>Tutorial Website - Videos</title>
 
     <style>
+        .clickable {
+            cursor: pointer;
+            color: #53A6F9;
+        }
 
+        .clickable:hover {
+            font-weight: 700;
+        }
     </style>
+
 </head>
 
 <body>
@@ -55,19 +63,72 @@
         <!-- Side Section END -->
         <!-- Main Section -->
         <section id="main-content">
+
             <header id="page-title">
                 <h1><span class="fa fa-video-camera fa-lg fa-fw" aria-hidden="true"></span> VIDEOS</h1>
             </header>
+
             <article>
 
-
-                
+                <h1 id="video-title">Video Title </h1>
+                <video id="active-video" src="" type="video/mp4" controls></video>
 
             </article>
 
+            <article>
+                <table>
+                    <col width="10%" />
+                    <col width="80%" />
+                    <col width="20%" />
+
+                    <tr>
+                        <th>#</th>
+                        <th>Video Title</th>
+                        <th>Duration</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <!-- this here will send the Node it self to use it in JS as an object element-->
+                        <td class="clickable" onclick="startVideo(this)" data-source="videos/What_we_learned.mp4"> What We Learned in NSA</td>
+                        <td class="duration">59 sec</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <!-- this here will send the Node it self to use it in JS as an object element-->
+                        <td class="clickable" onclick="startVideo(this)" data-source="videos/Bootstrap3_Tutorial.mp4"> Bootstrap3 Tutorial</td>
+                        <td class="duration">13 min</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <!-- this here will send the Node it self to use it in JS as an object element-->
+                        <td class="clickable"><a href="https://www.youtube.com/watch?v=rDv9tObvqgo&list=PLoYCgNOIyGAB_8_iq1cL8MVeun7cB6eNc&index=5">CSS Tutorial (External)</a></td>
+                        <td class="duration">21 min</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <!-- this here will send the Node it self to use it in JS as an object element-->
+                        <td class="clickable"><a href="https://www.youtube.com/watch?v=N4mEzFDjqtA">Learn Python in One Video (External)</a></td>
+                        <td class="duration">43 min</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <!-- this here will send the Node it self to use it in JS as an object element-->
+                        <td class="clickable"><a href="https://www.youtube.com/watch?v=A53BGPE8THw">HTML5 Semantic (External)</a></td>
+                        <td class="duration">4 min</td>
+                    </tr>
+
+                </table>
+
+            </article>
         </section>
         <!-- Main Section END-->
     </main>
+    <script src="script/video-player.js"></script>
 </body>
 
 </html>

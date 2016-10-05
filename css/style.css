@@ -25,27 +25,44 @@ body {
 
 h1 {
     font-size: 1.5em;
+    padding: 5px 0;
 }
 
-h2 {
-    margin-bottom: 10px;
+ p {
+  padding: 2px;
+  line-height: 25px;
+  text-align: justify;
 }
 
-p {
-    text-align: justify;
+
+
+article {
+    margin: 10px 10px;
+    padding: 20px 20px;
+    border-left: 3.5px solid #8c8c8c;
+    background-color: #F7F9FA;
+}
+
+article h1 {
+    color: #595959;
+}
+
+article a {
+    color: #53A6F9;
 }
 
 button {
-    padding: 10px 25px;
+    padding: 10px 20px;
     color: white;
-    border: 0px;
+    border: 0;
     border-radius: 30px;
     background-color: #53A6F9;
     margin: 10px 0;
 }
 
-button:hover{
-  background-color: #595959;
+button:hover {
+    background-color: #595959;
+    font-weight: 700;
 }
 
 a, a:active {
@@ -53,33 +70,64 @@ a, a:active {
     color: inherit;
 }
 
+label {
+    margin: 5px 0;
+}
+
 textarea {
     width: 100%;
     height: 200px;
-    margin: 10px 0 padding: 10px;
+    margin: 15px 0;
+    padding: 10px;
     border-radius: 10px;
+    border: 1px solid #e2e2e2;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+td, th {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){
+  background-color: #e2e2e2;
+}
+
+small {
+    font-size: 0.9em;
+    color: #b3b3b3;
+    display: block;
+}
+
+video{
+  width: 100%;
 }
 
 input[type="text"] {
-    width: 60%;
+    width: 40%;
     margin: 10px 0;
     padding: 5px;
     border-radius: 10px;
-    border: 1px black
+    border: 1px solid #e2e2e2;
 }
 
 #container {
     display: flex;
+    flex-direction: row;
     overflow: hidden;
-    width: 60%;
+    width: 65%;
     min-height: 750px;
     margin: 5% auto;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
     /*for older browser*/
     background-color: rgba(255, 255, 255, 0.6);
+    border-top: 0px solid   #808080;
     box-shadow: 2px 6px 34px -15px rgba(0, 0, 0, 0.56);
-    flex-wrap: wrap;
 }
 
 
@@ -140,11 +188,11 @@ input[type="text"] {
 
 /* ==================== Main Section =====================*/
 
-section {
+#main-content {
     width: 75%;
 }
 
-section #page-title {
+#page-title {
     padding: 10px 10px;
     color: white;
     background: linear-gradient(to left, #53A7F9 0%, #75C9FF 100%, #99F2FF 100%);
@@ -157,17 +205,19 @@ section #page-title {
     background-color: rgba(226, 226, 226, 0.6);
 }
 
-article {
-    margin: 10px 10px;
-    padding: 20px 20px;
-    border-left: 3.5px solid #8c8c8c;
-    background-color: #F7F9FA;
-}
+@media only screen and (max-width: 800px) {
+    #container {
+        flex-direction: column;
+    }
+    #side-content, #main-content {
+        width: 100%;
+    }
 
-article h1 {
-    color: #595959;
-}
-
-article p {
-    line-height: 35px;
+    #side-content{
+      text-align: center;
+    }
+    p {
+      text-align: left;
+        text-align: left;
+    }
 }
