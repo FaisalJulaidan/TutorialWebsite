@@ -24,17 +24,25 @@ body {
 }
 
 h1 {
-    font-size: 1.5em;
     padding: 5px 0;
+    font-size: 1.5em;
 }
 
- p {
-  padding: 2px;
-  line-height: 25px;
-  text-align: justify;
+h2 {
+    padding: 1px 0;
 }
 
+h3 {
+    margin: 3px 0px 5px 0;
+    font-size: 13px;
+    font-weight: normal;
+}
 
+p {
+    padding: 2px;
+    text-align: justify;
+    line-height: 25px;
+}
 
 article {
     margin: 10px 10px;
@@ -51,13 +59,18 @@ article a {
     color: #53A6F9;
 }
 
+article img {
+    max-width: 15%;
+    margin-bottom: 5px;
+}
+
 button {
+    margin: 10px 0;
     padding: 10px 20px;
     color: white;
     border: 0;
     border-radius: 30px;
     background-color: #53A6F9;
-    margin: 10px 0;
 }
 
 button:hover {
@@ -79,54 +92,54 @@ textarea {
     height: 200px;
     margin: 15px 0;
     padding: 10px;
-    border-radius: 10px;
     border: 1px solid #e2e2e2;
+    border-radius: 10px;
 }
 
 table {
-  table-layout: fixed;
-  width: 100%;
+    width: 100%;
+    table-layout: fixed;
 }
 
 td, th {
-  text-align: left;
-  padding: 8px;
+    padding: 8px;
+    text-align: left;
 }
 
-tr:nth-child(even){
-  background-color: #e2e2e2;
+tr:nth-child(even) {
+    background-color: #e2e2e2;
 }
 
 small {
-    font-size: 0.9em;
-    color: #b3b3b3;
     display: block;
+    color: #b3b3b3;
+    font-size: 0.9em;
 }
 
-video{
-  width: 100%;
+video {
+    width: 100%;
 }
 
 input[type="text"] {
     width: 40%;
     margin: 10px 0;
     padding: 5px;
-    border-radius: 10px;
     border: 1px solid #e2e2e2;
+    border-radius: 10px;
 }
 
 #container {
     display: flex;
-    flex-direction: row;
     overflow: hidden;
+    flex-direction: row;
     width: 65%;
     min-height: 750px;
     margin: 5% auto;
+    border-top: 0px solid #808080;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
     /*for older browser*/
     background-color: rgba(255, 255, 255, 0.6);
-    border-top: 0px solid   #808080;
     box-shadow: 2px 6px 34px -15px rgba(0, 0, 0, 0.56);
 }
 
@@ -186,6 +199,18 @@ input[type="text"] {
 }
 
 
+/* ==================== Profile Picture =====================*/
+
+#side-content .pic img {
+    width: 100%;
+    transition: all ease 0.5s;
+}
+
+#side-content .pic img:hover {
+    filter: blur(1.5px);
+}
+
+
 /* ==================== Main Section =====================*/
 
 #main-content {
@@ -205,6 +230,22 @@ input[type="text"] {
     background-color: rgba(226, 226, 226, 0.6);
 }
 
+#post-title {
+    margin-bottom: 20px;
+}
+
+.clickable {
+    cursor: pointer;
+    color: #53A6F9;
+}
+
+.clickable:hover {
+    font-weight: 700;
+}
+
+
+/* ==================== Media Queries =====================*/
+
 @media only screen and (max-width: 800px) {
     #container {
         flex-direction: column;
@@ -212,12 +253,11 @@ input[type="text"] {
     #side-content, #main-content {
         width: 100%;
     }
-
-    #side-content{
-      text-align: center;
+    #side-content {
+        text-align: center;
     }
     p {
-      text-align: left;
+        text-align: left;
         text-align: left;
     }
 }
