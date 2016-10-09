@@ -1,3 +1,5 @@
+
+
     function startVideo(clickedElement) {
         var source = clickedElement.getAttribute("data-source");
         var title = clickedElement.innerText;
