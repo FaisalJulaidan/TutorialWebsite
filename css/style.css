@@ -1,4 +1,3 @@
-
 /*==================== General =====================*/
 
 * {
@@ -12,12 +11,13 @@
 body {
     width: 100%;
     animation: fadein 1s;
-    background-image: url("../images/background.png");
+    background-image: url("../imgs/background.png");
 }
 
 h1 {
-    padding: 5px 0;
+    padding: 6px 0;
     font-size: 1.5em;
+    margin: 2px 0;
 }
 
 h2 {
@@ -31,10 +31,15 @@ h3 {
 }
 
 p {
+    margin-top: 5px;
     padding: 2px;
     text-align: justify;
     line-height: 25px;
-    margin-top: 5px;
+
+}
+
+img {
+width:  100%;
 }
 
 article {
@@ -71,7 +76,7 @@ button:hover {
     font-weight: 700;
 }
 
-a, a:active {
+a,a:hover, a:active {
     text-decoration: none;
     color: inherit;
 }
@@ -129,7 +134,7 @@ input[type="text"] {
     overflow: hidden;
     flex-direction: row;
     width: 65%;
-    min-height: 750px;
+    min-height: 70%;
     margin: 5% auto;
     border-top: 0px solid #808080;
     border-radius: 5px;
@@ -137,6 +142,7 @@ input[type="text"] {
     /*for older browser*/
     background-color: rgba(255, 255, 255, 0.6);
     box-shadow: 2px 6px 34px -15px rgba(0, 0, 0, 0.56);
+
 }
 
 
@@ -175,6 +181,46 @@ nav ul a .clicked {
 }
 
 
+/*============ Accordion ============*/
+.sub-list .bar{
+  float:right;
+}
+
+.sub-list:hover .bar{
+  float:right;
+  color: #53A6F9;
+}
+
+.accordion {
+    background-color:#666666;
+    display: none;
+}
+
+.accordion a li {
+    padding: 15px 40px;
+    color: #e2e2e2;
+    border-bottom: 1px solid gray;
+    font-size: 14px;
+}
+
+.accordion a li:hover {
+    border-left: 4.5px solid #e2e2e2;
+    font-weight: 700;
+}
+
+.accordion a .clicked {
+    color: #e2e2e2;
+    border-left: 4.5px solid #e2e2e2;
+}
+
+.shadow {
+    -webkit-box-shadow: inset 0px 6px 31px -13px #5C5C5C, -9px 1px 31px 1px #BABABA;
+    -moz-box-shadow: inset 0px 6px 31px -13px #5C5C5C, -9px 1px 31px 1px #BABABA;
+    box-shadow: inset 0px 6px 31px -13px #5C5C5C, -9px 1px 31px 1px #BABABA;
+    -o-box-shadow: inset 0px 6px 31px -13px #5C5C5C, -9px 1px 31px 1px #BABABA;
+}
+
+
 /* ============ Social Icons ============*/
 
 .social-icons {
@@ -184,15 +230,49 @@ nav ul a .clicked {
     text-decoration: none;
     color: #595959;
     font-size: 2em;
+
 }
 
 .social-icons a {
-    padding: 0 5px;
+    padding: 0 1px;
 }
 
 .social-icons a:hover {
     color: #53A6F9;
 }
+
+.twitter {
+    color: #00aced;
+}
+
+.twitter:hover {
+    color: #0084b4;
+}
+
+.facebook {
+    color: #3b5998;
+}
+
+.facebook:hover {
+    color: #005195;
+}
+
+.github {
+    color: #333;
+}
+
+.gtihub:hover {
+    color: black;
+}
+
+.google{
+    color: #ea4335;
+}
+
+.google:hover {
+    color: #dd4b39;
+}
+
 
 
 /* ============ Profile Picture ============*/
@@ -214,7 +294,7 @@ nav ul a .clicked {
 }
 
 #page-title {
-    padding: 10px 10px;
+    padding: 5px 10px;
     color: white;
     background: linear-gradient(to left, #53A7F9 0%, #75C9FF 100%, #99F2FF 100%);
     background: -webkit-linear-gradient(left, #53A7F9 0%, #75C9FF 100%, #99F2FF 100%);
@@ -224,10 +304,6 @@ nav ul a .clicked {
     background-color: rgb(226, 226, 226);
     /*for older browser*/
     background-color: rgba(226, 226, 226, 0.6);
-}
-
-#post-title {
-    margin-bottom: 20px;
 }
 
 .clickable {
@@ -240,31 +316,116 @@ nav ul a .clicked {
 }
 
 
+/* ============ Carousel ============*/
 
+
+.carousel {
+    border-bottom: 10px solid #e2e2e2;
+}
+
+.carousel-control {
+    opacity: 0.4;
+    color: black;
+}
+
+.carousel-indicators li.active {
+    background: #595959;
+    border: none;
+}
+
+.carousel-indicators li {
+    background: lightgray;
+    border: none;
+    border: 1px solid #e2e2e2;
+}
+
+.carousel-control.left {
+    background-image: none;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.10) 0, rgba(0, 0, 0, 0.0001) 100%);
+}
+
+.carousel-control.right {
+    background-image: none;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.10) 0, rgba(0, 0, 0, 0.0001) 100%);
+}
+
+
+/* ============ Footer ============*/
+
+#main-footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: #e2e2e2;
+
+}
+
+
+#main-footer p {
+    text-align: center;
+    color: #595959;
+    font-weight: 700;
+}
+
+.carousel {
+  width: 100%;
+
+
+}
 /*================= The Page Fade-in Effect =================*/
 
 @-webkit-keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @-moz-keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @-o-keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes fadein {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
+
 /* ==================== Media Queries =====================*/
-@media only screen and (max-width: 800px) {
+
+@media only screen and (max-width: 1293px) {
+  .sub-list .bar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1196px) {
+  #container {
+      width: 72%;
+  }
+}
+
+@media only screen and (max-width: 1008px) {
     #container {
         flex-direction: column;
     }
@@ -277,5 +438,8 @@ nav ul a .clicked {
     p {
         text-align: left;
         text-align: left;
+    }
+    .sub-list .bar {
+      display: block;
     }
 }

@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.min.css" />
+    <link rel="stylesheet" href="libraries/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
     <title>Tutorial Website - Blog</title>
 
@@ -19,19 +20,40 @@
         <!-- Side Section -->
         <section id="side-content">
             <nav>
-                <ul class="menu">
+                <ul class="menu sha">
                     <a href="home.html">
-                        <li><span class="fa fa-home fa-lg fa-fw" aria-hidden="true"></span> Home</li>
+                        <li class="clicked"><span class="fa fa-home fa-lg fa-fw" aria-hidden="true"></span> Home</li>
                     </a>
+
+                    <!-- Sub-List -->
+                    <a>
+                        <li class="sub-list"><span class="fa fa-university fa-lg fa-fw" aria-hidden="true"></span> Learning Center
+                            <span class="fa fa-bars fa-lg fa-fw bar" aria-hidden="true"></span>
+                        </li>
+                    </a>
+
+                    <!-- Accordion -->
+                    <ul class="accordion shadow">
+                        <a href="">
+                            <li><span class="fa fa-video-camera fa-lg fa-fw" aria-hidden="true"></span> Videos</li>
+
+                        </a>
+                        <a href="">
+                            <li><span class="fa fa-book fa-lg fa-fw" aria-hidden="true"></span> Recources</li>
+                        </a>
+                        <a href="">
+                            <li><span class="fa fa-external-link-square fa-lg fa-fw" aria-hidden="true"></span> Links</li>
+                        </a>
+                    </ul>
+
                     <a href="profile.html">
                         <li><span class="fa fa-user fa-lg fa-fw" aria-hidden="true"></span> Profile</li>
                     </a>
                     <a href="blog.html">
-                        <li class="clicked"><span class="fa fa-coffee fa-lg fa-fw" aria-hidden="true"></span> Blog</li>
+                        <li><span class="fa fa-coffee fa-lg fa-fw" aria-hidden="true"></span> Blog</li>
                     </a>
-                    <a href="videos.html">
-                        <li><span class="fa fa-video-camera fa-lg fa-fw" aria-hidden="true"></span> Videos</li>
-                    </a>
+
+
                     <a href="games.html">
                         <li><span class="fa fa-fort-awesome fa-lg fa-fw" aria-hidden="true"></span> Games</li>
                     </a>
@@ -39,15 +61,17 @@
                         <li><span class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></span> Contacts</li>
                     </a>
                 </ul>
+
             </nav>
 
 
             <div class="social-icons">
-                <a href=""><span class="fa fa-twitter"></span></a>
-                <a href=""><span class="fa fa-facebook"></span></a>
-                <a href=""><span class="fa fa-linkedin"></span></a>
-                <a href=""><span class="fa fa-github"></span></a>
+                <a href="https://twitter.com/FaisalJulaidan"><span class="fa twitter fa-twitter-square fa-lg"></span></span></a>
+                <a href="https://www.facebook.com/faisal.julaidan"><span class="fa  facebook fa-facebook-square fa-lg"></span></a>
+                <a href="https://www.facebook.com/faisal.julaidan"><span class="fa google fa-google-plus-square fa-lg"></span></a>
+                <a href="https://github.com/FaisalJulaidan"><span class="fa github fa-github-square fa-lg"></span></a>
             </div>
+
         </section>
         <!-- Side Section END -->
         <!-- Main Section -->
@@ -90,6 +114,12 @@
         </section>
         <!-- Main Section END-->
     </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="script/accordion.js"></script>
+
+
 </body>
 
 </html>
