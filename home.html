@@ -34,29 +34,27 @@
 
                     <!-- Accordion -->
                     <ul class="accordion shadow">
-                        <a href="">
+                        <a href="videos.html">
                             <li><span class="fa fa-video-camera fa-lg fa-fw" aria-hidden="true"></span> Videos</li>
 
                         </a>
-                        <a href="">
+                        <a href="recources.html">
                             <li><span class="fa fa-book fa-lg fa-fw" aria-hidden="true"></span> Recources</li>
                         </a>
-                        <a href="">
+                        <a href="links.html">
                             <li><span class="fa fa-external-link-square fa-lg fa-fw" aria-hidden="true"></span> Links</li>
                         </a>
                     </ul>
+                    <!-- Accordion END-->
 
-                    <a href="profile.html">
-                        <li><span class="fa fa-user fa-lg fa-fw" aria-hidden="true"></span> Profile</li>
+                    <a href="about.html">
+                        <li><span class="fa fa-users fa-lg fa-fw" aria-hidden="true"></span> About us</li>
                     </a>
+
                     <a href="blog.html">
                         <li><span class="fa fa-coffee fa-lg fa-fw" aria-hidden="true"></span> Blog</li>
                     </a>
 
-
-                    <a href="games.html">
-                        <li><span class="fa fa-fort-awesome fa-lg fa-fw" aria-hidden="true"></span> Games</li>
-                    </a>
                     <a href="contacts.html">
                         <li><span class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></span> Contacts</li>
                     </a>
@@ -77,12 +75,12 @@
         <!-- Main Section -->
         <section id="main-content">
             <header id="page-title">
-                <h1><span class="fa fa-home fa-lg fa-fw" aria-hidden="true"></span> Toutorial Website</h1>
+                <h1><span class="fa fa-home fa-lg fa-fw" aria-hidden="true"></span> Tutorial Website</h1>
             </header>
 
             <!-- Carousel -->
             <div id="Carousel" class="carousel slide" data-interval="5000">
-                <ol class="carousel-indicators">
+                <ol class="carousel-indicators" role="listbox">
                     <li data-target="Carousel" data-slide-to="0" class="active"></li>
                     <li data-target="Carousel" data-slide-to="1"></li>
                     <li data-target="Carousel" data-slide-to="2"></li>
@@ -108,18 +106,50 @@
                 </a>
             </div>
             <!-- Carosuel End -->
+            <!-- Blog Posts -->
+            <article style="border:none;">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <img src="imgs/flexbox.png" alt="...">
+                            <div class="caption">
+                                <h1>A Visual Guide to CSS3 Flexbox</h1>
+                                <p>The Flexbox Layout officially called CSS Flexible Box Layout Module is new layout module in CSS3 made to improve the items align, directions and order in the container even when they are with dynamic or even unknown size.
+                                    The prime characteristic of the flex container is the ability to modify the width or height of its children to fill the available space in the best possible way on different screen sizes...</p>
+                                <p>
+                                    <a href="#" role="button"> <button type="button" name="button">Read More</button></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-            <article>
 
-                <h1>HTML5</h1>
-                <h2>The language for building web pages</h2><br />
-
+                    <div class="col-md-6">
+                        <div class="thumbnail">
+                            <img src="imgs/semantic-tags.jpg" alt="...">
+                            <div class="caption">
+                                <h1>Semantics and the Web</h1>
+                                <p>Semantics are the implied meaning of a subject, like a word or sentence. It aids how humans (and these days, machines) interpret subject matter. On the web, HTML serves both humans and machines, suggesting the purpose of
+                                    the content enclosed within an HTML tag. Since the dawn of HTML, elements have been revised and adapted based on actual usage on the web, ideally so that authors can navigate...
+                                </p>
+                                <p>
+                                    <a href="#" role="button"> <button type="button" name="button">Read More</button></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </article>
-
-
+            <!-- Blog Posts END-->
         </section>
         <!-- Main Section END-->
+
+        <footer id="main-footer">
+            <p>&copy;2016 Tutorial Website</p>
+        </footer>
     </main>
+
+
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

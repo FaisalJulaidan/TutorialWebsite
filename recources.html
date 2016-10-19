@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="libraries/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-    <title>Tutorial Website - Blog</title>
+    <title>Tutorial Website - Recources</title>
 
 </head>
 
@@ -74,40 +74,66 @@
       <!-- Side Section END -->
         <!-- Main Section -->
         <section id="main-content">
+
             <header id="page-title">
-                <h1><span class="fa fa-coffee fa-lg fa-fw" aria-hidden="true"></span> BLOG</h1>
+                <h1><span class="fa fa-book fa-lg fa-fw" aria-hidden="true"></span> RECOURCES</h1>
             </header>
+
             <article>
-                <header id="post-title">
-                    <h1>A Visual Guide to CSS3 Flexbox Properties</h1>
-                    <small>
-                      <time datetime="2012-04-18"><span class="fa fa-clock-o fa-fw"></span>April 13th, 2015 by Dimitar Stojanov.</time>
-                    </small>
-                </header>
 
-                <p>The Flexbox Layout officially called CSS Flexible Box Layout Module is new layout module in CSS3 made to improve the items align, directions and order in the container even when they are with dynamic or even unknown size. The prime characteristic
-                    of the flex container is the ability to modify the width or height of its children to fill the available space in the best possible way on different screen sizes.</p><br />
+                <h1>Cheat Sheets</h1>
 
-                <p>Many designers and developers find this flexbox layout easier to use, as positioning of the elements is simpler thus more complex layouts can be achieved with less code, leading to simpler development process. Flexbox layout algorithm
-                    is direction based unlike the block or inline layout which are vertically and horizontally based. This flexbox layout should be used for small application components, while new CSS Grid Layout Module is emerging to handle the large
-                    scale layouts.</p><br />
-
-                <a href="https://scotch.io/tutorials/a-visual-guide-to-css3-flexbox-properties">READ MORE</a>
             </article>
 
             <article>
-                <header id="post-title">
-                    <h1>Semantics and the Web</h1>
-                    <small>
-                      <time datetime="2012-04-18"><span class="fa fa-clock-o fa-fw"></span>April 18th, 2012 by Mike Robinson.</time>
-                    </small>
-                </header>
+                <table>
+                    <col width="10%" />
+                    <col width="80%" />
+                    <col width="20%" />
 
-                <p> Semantics are the implied meaning of a subject, like a word or sentence. It aids how humans (and these days, machines) interpret subject matter. On the web, HTML serves both humans and machines, suggesting the purpose of the content enclosed
-                    within an HTML tag. Since the dawn of HTML, elements have been revised and adapted based on actual usage on the web, ideally so that authors can navigate markup with ease and create carefully structured documents, and so that machines
-                    can infer the context of the wonderful collection of data we humans can read.</p><br/>
+                    <tr>
+                        <th>#</th>
+                        <th>Video Title</th>
+                        <th>Duration</th>
+                    </tr>
 
-                <a href="http://html5doctor.com/lets-talk-about-semantics/">READ MORE</a>
+                    <tr>
+                        <td>1</td>
+                        <!-- this here will send the Node it self to use it in JS as an object element-->
+                        <td class="clickable" onclick="startVideo(this)" data-source="videos/What_we_learned.mp4"> What We Learned in NSA</td>
+                        <td class="duration">59 sec</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <!-- this here will send the Node it self to use it in JS as an object element-->
+                        <td class="clickable" onclick="startVideo(this)" data-source="videos/Bootstrap3_Tutorial.mp4"> Bootstrap3 Tutorial</td>
+                        <td class="duration">13 min</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <!-- this here will send the Node it self to use it in JS as an object element-->
+                        <td class="clickable"><a href="https://www.youtube.com/watch?v=rDv9tObvqgo&list=PLoYCgNOIyGAB_8_iq1cL8MVeun7cB6eNc&index=5">CSS Tutorial (External)</a></td>
+                        <td class="duration">21 min</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <!-- this here will send the Node it self to use it in JS as an object element-->
+                        <td class="clickable"><a href="https://www.youtube.com/watch?v=N4mEzFDjqtA">Learn Python in One Video (External)</a></td>
+                        <td class="duration">43 min</td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <!-- this here will send the Node it self to use it in JS as an object element-->
+                        <td class="clickable"><a href="https://www.youtube.com/watch?v=A53BGPE8THw">HTML5 Semantic (External)</a></td>
+                        <td class="duration">4 min</td>
+                    </tr>
+
+                </table>
+
             </article>
         </section>
         <!-- Main Section END-->
@@ -118,10 +144,10 @@
         
     </main>
 
+    <script src="script/video-player.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="script/accordion.js"></script>
-
 
 </body>
 

@@ -11,51 +11,72 @@
     <link rel="stylesheet" href="libraries/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-    <title>Tutorial Website - Profile</title>
+    <title>Tutorial Website - About us</title>
 
 </head>
+
 
 <body>
     <main id="container">
         <!-- Side Section -->
         <section id="side-content">
-            <div class="pic"><img src="imgs/profile-pic.jpg" alt="Profile-Picture" /></div>
             <nav>
-                <ul class="menu">
+                <ul class="menu sha">
                     <a href="home.html">
-                        <li><span class="fa fa-home fa-lg fa-fw" aria-hidden="true"></span> Home</li>
+                        <li class="clicked"><span class="fa fa-home fa-lg fa-fw" aria-hidden="true"></span> Home</li>
                     </a>
-                    <a href="profile.html">
-                        <li class="clicked"><span class="fa fa-user fa-lg fa-fw" aria-hidden="true"></span> Profile</li>
+
+                    <!-- Sub-List -->
+                    <a>
+                        <li class="sub-list"><span class="fa fa-university fa-lg fa-fw" aria-hidden="true"></span> Learning Center
+                            <span class="fa fa-bars fa-lg fa-fw bar" aria-hidden="true"></span>
+                        </li>
                     </a>
+
+                    <!-- Accordion -->
+                    <ul class="accordion shadow">
+                        <a href="videos.html">
+                            <li><span class="fa fa-video-camera fa-lg fa-fw" aria-hidden="true"></span> Videos</li>
+
+                        </a>
+                        <a href="recources.html">
+                            <li><span class="fa fa-book fa-lg fa-fw" aria-hidden="true"></span> Recources</li>
+                        </a>
+                        <a href="links.html">
+                            <li><span class="fa fa-external-link-square fa-lg fa-fw" aria-hidden="true"></span> Links</li>
+                        </a>
+                    </ul>
+                    <!-- Accordion END-->
+
+                    <a href="about.html">
+                        <li><span class="fa fa-users fa-lg fa-fw" aria-hidden="true"></span> About us</li>
+                    </a>
+
                     <a href="blog.html">
                         <li><span class="fa fa-coffee fa-lg fa-fw" aria-hidden="true"></span> Blog</li>
                     </a>
-                    <a href="videos.html">
-                        <li><span class="fa fa-video-camera fa-lg fa-fw" aria-hidden="true"></span> Videos</li>
-                    </a>
-                    <a href="games.html">
-                        <li><span class="fa fa-fort-awesome fa-lg fa-fw" aria-hidden="true"></span> Games</li>
-                    </a>
+
                     <a href="contacts.html">
                         <li><span class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></span> Contacts</li>
                     </a>
                 </ul>
+
             </nav>
 
-
             <div class="social-icons">
-                <a href="https://twitter.com/FaisalJulaidan"><span class="fa fa-twitter"></span></a>
-                <a href="https://www.facebook.com/faisal.julaidan"><span class="fa fa-facebook"></span></a>
-                <a href="https://www.linkedin.com/in/faisal-julaidan-641676a5?trk=hp-identity-name"><span class="fa fa-linkedin"></span></a>
-                <a href="https://github.com/FaisalJulaidan"><span class="fa fa-github"></span></a>
+                <a href="https://twitter.com/FaisalJulaidan"><span class="fa twitter fa-twitter-square fa-lg"></span></span></a>
+                <a href="https://www.facebook.com/faisal.julaidan"><span class="fa  facebook fa-facebook-square fa-lg"></span></a>
+                <a href="https://www.facebook.com/faisal.julaidan"><span class="fa google fa-google-plus-square fa-lg"></span></a>
+                <a href="https://github.com/FaisalJulaidan"><span class="fa github fa-github-square fa-lg"></span></a>
             </div>
+
+
         </section>
         <!-- Side Section END -->
         <!-- Main Section -->
         <section id="main-content">
             <header id="page-title">
-                <h1><span class="fa fa-user fa-lg fa-fw" aria-hidden="True"></span> PROFILE</h1>
+                <h1><span class="fa fa-users fa-lg fa-fw" aria-hidden="True"></span> ABOUT US</h1>
             </header>
 
             <article>
@@ -155,6 +176,11 @@
             </article>
         </section>
         <!-- Main Section END-->
+
+        <footer id="main-footer">
+            <p>&copy;2016 Tutorial Website</p>
+        </footer>
+
     </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

@@ -22,6 +22,7 @@ h1 {
 
 h2 {
     padding: 1px 0;
+    font-weight: 700;
 }
 
 h3 {
@@ -69,10 +70,11 @@ button {
     border: 0;
     border-radius: 30px;
     background-color: #53A6F9;
+
 }
 
 button:hover {
-    background-color: #595959;
+    background-color: #53A6F9;
     font-weight: 700;
 }
 
@@ -132,7 +134,7 @@ input[type="text"] {
 #container {
     display: flex;
     overflow: hidden;
-    flex-direction: row;
+    flex-wrap: wrap;
     width: 65%;
     min-height: 70%;
     margin: 5% auto;
@@ -225,7 +227,7 @@ nav ul a .clicked {
 
 .social-icons {
     margin-top: auto;
-    padding-bottom: 20px;
+    padding: 20px 0;
     text-align: center;
     text-decoration: none;
     color: #595959;
@@ -275,7 +277,7 @@ nav ul a .clicked {
 
 
 
-/* ============ Profile Picture ============*/
+/* ============ Profile Pictures ============*/
 
 #side-content .pic img {
     width: 100%;
@@ -319,10 +321,6 @@ nav ul a .clicked {
 /* ============ Carousel ============*/
 
 
-.carousel {
-    border-bottom: 10px solid #e2e2e2;
-}
-
 .carousel-control {
     opacity: 0.4;
     color: black;
@@ -353,25 +351,20 @@ nav ul a .clicked {
 /* ============ Footer ============*/
 
 #main-footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
     background: #e2e2e2;
+    flex-grow: 1;
+    background: linear-gradient(to right, #53A7F9 0%, #75C9FF 100%, #99F2FF 100%);
 
 }
 
 
 #main-footer p {
     text-align: center;
-    color: #595959;
+    color: white;
     font-weight: 700;
 }
 
-.carousel {
-  width: 100%;
 
-
-}
 /*================= The Page Fade-in Effect =================*/
 
 @-webkit-keyframes fadein {
