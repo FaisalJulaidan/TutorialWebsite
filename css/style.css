@@ -188,6 +188,10 @@ nav ul a .clicked {
   float:right;
 }
 
+.sub-list:hover, .accordion {
+  background: black;
+}
+
 .sub-list:hover .bar{
   float:right;
   color: #53A6F9;
@@ -195,7 +199,7 @@ nav ul a .clicked {
 
 .accordion {
     background-color:#666666;
-    display: none;
+    display: block;
 }
 
 .accordion a li {
