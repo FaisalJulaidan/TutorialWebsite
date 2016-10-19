@@ -41,7 +41,6 @@ $("#tele").on("blur keyup paste cut", function() {
       "Invaild Number, no Letters");
 });
 
-
 $("#subject").on("blur", function() {
     validate($(this),
     /^[\w\s]+$/,

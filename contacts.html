@@ -14,12 +14,16 @@
     <title>Tutorial Website - Contacts</title>
 
     <style>
+        form p{
+          font-size: 14px;
+          font-weight:700
+        }
         .red {
             color: red;
         }
 
         .green {
-            color: green;
+            color: #1ab254;
         }
     </style>
 
@@ -109,6 +113,8 @@
                     <input id="tele" type="text" name="tele"><br>
 
                     <label for="subject">Subject:</label><br>
+                    <!-- for telephone validation message will filled by Jquery -->
+                    <p></p>
                     <input id="subject" type="text" name="subject"><br>
 
                     <label for="message">Message:</label><br>
