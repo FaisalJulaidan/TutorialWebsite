@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/reset.css" />
+    <link rel="stylesheet" href="../libraries/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+    <title>Tutorial Website - Blog</title>
+
+</head>
+<style>
+    form p {
+        font-size: 14px;
+        font-weight: 700
+    }
+
+    .red {
+        color: red;
+    }
+
+    .green {
+        color: #1ab254;
+    }
+</style>
+
+<body>
+    <main id="container">
+        <!-- Side Section -->
+        <section id="side-content">
+            <nav>
+                <ul class="menu sha">
+                    <a href="../home.html">
+                        <li class="clicked"><span class="fa fa-home fa-lg fa-fw" aria-hidden="true"></span> Home</li>
+                    </a>
+
+                    <!-- Sub-List -->
+                    <a>
+                        <li class="sub-list"><span class="fa fa-university fa-lg fa-fw" aria-hidden="true"></span> Learning Center
+                            <span class="fa fa-bars fa-lg fa-fw bar" aria-hidden="true"></span>
+                        </li>
+                    </a>
+
+                    <!-- Accordion -->
+                    <ul class="accordion shadow">
+                        <a href="../videos.html">
+                            <li><span class="fa fa-video-camera fa-lg fa-fw" aria-hidden="true"></span> Videos</li>
+
+                        </a>
+                        <a href="../recources.html">
+                            <li><span class="fa fa-book fa-lg fa-fw" aria-hidden="true"></span> Recources</li>
+                        </a>
+                        <a href="../links.html">
+                            <li><span class="fa fa-external-link-square fa-lg fa-fw" aria-hidden="true"></span> Links</li>
+                        </a>
+                    </ul>
+                    <!-- Accordion END-->
+
+                    <a href="../about.html">
+                        <li><span class="fa fa-users fa-lg fa-fw" aria-hidden="true"></span> About us</li>
+                    </a>
+
+                    <a href="../blog.html">
+                        <li><span class="fa fa-coffee fa-lg fa-fw" aria-hidden="true"></span> Blog</li>
+                    </a>
+
+                    <a href="../contacts.html">
+                        <li><span class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></span> Contacts</li>
+                    </a>
+                </ul>
+
+            </nav>
+
+            <div class="social-icons">
+                <a href="https://twitter.com/FaisalJulaidan"><span class="fa twitter fa-twitter-square fa-lg"></span></span></a>
+                <a href="https://www.facebook.com/faisal.julaidan"><span class="fa  facebook fa-facebook-square fa-lg"></span></a>
+                <a href="https://www.facebook.com/faisal.julaidan"><span class="fa google fa-google-plus-square fa-lg"></span></a>
+                <a href="https://github.com/FaisalJulaidan"><span class="fa github fa-github-square fa-lg"></span></a>
+            </div>
+
+
+        </section>
+        <!-- Side Section END -->
+        <!-- Main Section -->
+        <section id="main-content">
+            <header id="page-title">
+                <h1><span class="fa fa-coffee fa-lg fa-fw" aria-hidden="true"></span> BLOG</h1>
+            </header>
+            <article>
+                <header id="post-title">
+                    <h1>Kabira's Article</h1>
+                    <small>
+                      <time datetime="2016-10-23"><span class="fa fa-clock-o fa-fw"></span>October 23th, 2016 by Kabira Suleman.</time>
+                    </small>
+                </header>
+
+                <p>The Applied Software Engineering course at Cardiff University has been a constant learning journey for me - having had no former programming experience I find it very useful to makes notes of even the most trivial things such as the syntax
+                    of a language. I find I often need the logical foundation or explanation of why a method work in order to grasp an idea and make it ‘stick’. The course so far has also been very informative - it's very hands on and we are producing
+                    code every lesson rather than solely listening to somebody talking without any practice or input. The interactivity of the course makes it good particularly for ma as i am a kinesthetic learner. The course has been full of positives
+                    for me and I enjoy the challenge of programming and appreciate the rewarding feeling when you persevere and your code runs - I see I am quite behind a majority of a class but I am confident that will a lot of hard work I will follow
+                    the curriculum and advance my skills in programming.The website is going well, I have learnt a lot of things from Faisal and he has spent a lot of time explaining things thoroughly to me which I really appreciate. Some of the things
+                    I learnt from him include website positioning with use of padding and margins and how to create a container which instantly elevates the presentation of the website and makes a critical change.
+                </p><br />
+
+            </article>
+
+            <article id="comments">
+                <header id="post-title">
+                    <h1>Comments</h1>
+                </header>
+
+
+            </article>
+
+
+            <article id="addComment">
+                <header id="post-title">
+                    <h1> Add a Comment</h1>
+
+                    <label for="name">Full Name:</label><br>
+                    <!-- <p> is for name validation message and will filled by Jquery -->
+                    <p></p>
+                    <input id="name" type="text" name="name"><br>
+
+                    <label for="comment">Comment:</label><br>
+                    <textarea></textarea>
+                    <button type="submit" name="submit">Submit</button>
+                </header>
+            </article>
+
+
+        </section>
+        <!-- Main Section END-->
+
+        <footer id="main-footer">
+            <p>&copy;2016 Tutorial Website</p>
+        </footer>
+
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="../script/accordion.js"></script>
+    <script src="../script/commentBox.js"></script>
+    <script src="../script/validateForm.js"></script>
+
+
+
+
+</body>
+
+</html>
