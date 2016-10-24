@@ -21,7 +21,7 @@ h1 {
 }
 
 h2 {
-    padding: 1px 0;
+    padding: 2px 0;
     font-weight: 700;
 }
 
@@ -36,7 +36,6 @@ p {
     padding: 2px;
     text-align: justify;
     line-height: 25px;
-
 }
 
 img {
@@ -96,6 +95,10 @@ textarea {
     border-radius: 10px;
 }
 
+li {
+  list-style-position: inside;
+  padding: 4px 0;
+}
 table {
     width: 100%;
     table-layout: fixed;
