@@ -37,7 +37,7 @@
             <nav>
                 <ul class="menu sha">
                     <a href="home.html">
-                        <li class="clicked"><span class="fa fa-home fa-lg fa-fw" aria-hidden="true"></span> Home</li>
+                        <li class=""><span class="fa fa-home fa-lg fa-fw" aria-hidden="true"></span> Home</li>
                     </a>
 
                     <!-- Sub-List -->
@@ -71,7 +71,7 @@
                     </a>
 
                     <a href="contacts.html">
-                        <li><span class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></span> Contacts</li>
+                        <li class="clicked"><span class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></span> Contacts</li>
                     </a>
                 </ul>
 
@@ -117,9 +117,11 @@
                     <input id="subject" type="text" name="subject"><br>
 
                     <label for="message">Message:</label><br>
+                    <!-- for textarea validation message will filled by Jquery -->
+                    <p></p>
                     <textarea id="message" name="message" spellcheck="true"></textarea><br>
 
-                    <button id="button" type="button" name="submit"><span class="fa fa-paper-plane fa-fw"></span>  submit</button>
+                    <button id="submitBtn" type="button" name="submit"><span class="fa fa-paper-plane fa-fw"></span>  submit</button>
                 </form>
 
 
