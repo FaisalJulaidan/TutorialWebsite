@@ -58,9 +58,9 @@ $("#tele").on("blur keyup paste cut", function() {
 //validating Subject input
 $("#subject").on("blur keyup paste cut", function() {
     validSub = validate($(this),
-    /^[\w\s]+$/,
+    /^(?!\s*$).+/,
       "vaild Subject",
-      "Invalid Subject");
+      "Invalid Subject, should't left empty!");
 });
 
 $("#message").on("blur keyup paste cut", function() {

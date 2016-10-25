@@ -36,6 +36,7 @@ p {
     padding: 2px;
     text-align: justify;
     line-height: 25px;
+    word-wrap: break-word;
 }
 
 img {
