@@ -35,8 +35,6 @@ $("#name").on("keyup change blur paste cut", function() {
       /^([a-zA-Z]+[,.]?[ ]?|[a-zA-Z]+['-]?)+$/,
       "Valid Name",
       "Invaild Name, no Numbers, Double Spaces or Symbols !@#$%^*&()");
-
-      console.log(validName);
 });
 
 //validating Email input
