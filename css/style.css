@@ -39,6 +39,10 @@ p {
     word-wrap: break-word;
 }
 
+strong {
+  font-weight: 700;
+}
+
 img {
 width:  100%;
 }
@@ -103,16 +107,39 @@ li {
 table {
     width: 100%;
     table-layout: fixed;
+    margin: 10px 0;
+
 }
 
 td, th {
-    padding: 8px;
-    text-align: left;
+    padding: 5px;
+    text-align: center;
+    line-height: 20px;
+}
+
+ .pt {
+   padding-top: 2px;
+ }
+
+.header {
+  font-weight: 700;
+  color: #ffffff;
+  background: #ea6153;
+}
+
+.left {
+  text-align: left;
+}
+
+tr {
+    background-color: #f6f6f6;
 }
 
 tr:nth-child(even) {
-    background-color: #e2e2e2;
+    background-color: #eaeaea;
 }
+
+
 
 small {
     display: block;
